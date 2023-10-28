@@ -6,5 +6,6 @@ plotly
 scikit-learn
 tensorflow
 streamlit
-
-
+pickle
+string
+nlpaug

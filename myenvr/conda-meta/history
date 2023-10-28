@@ -1,5 +1,5 @@
-==> 2023-10-28 15:43:27 <==
-# cmd: C:\Users\rla\AppData\Local\anaconda3\Scripts\conda-script.py create -p myenv python==3.9
+==> 2023-10-28 19:49:06 <==
+# cmd: C:\Users\rla\AppData\Local\anaconda3\Scripts\conda-script.py create -p myenvr python==3.9
 # conda version: 23.3.1
 +defaults/noarch::tzdata-2023c-h04d1e81_0
 +defaults/win-64::ca-certificates-2023.08.22-haa95532_0
