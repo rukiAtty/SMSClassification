@@ -5,7 +5,7 @@ from tensorflow.keras.preprocessing.sequence import pad_sequences
 import string
 import streamlit as st
 
-model=pickle.load(open('./model.pkl','rb'))
+model=pickle.load(open('./model1.pkl','rb'))
 VOCAB_SIZE = 1000
 PUNCTUATION = string.punctuation
 
@@ -24,7 +24,6 @@ def predict_category(text):
     pred = pred.flatten()[0]
     
     return "SPAM" if pred == 1 else "NOT A SPAM"
-
 
 
 def main():

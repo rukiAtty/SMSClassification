@@ -8,3 +8,4 @@ scikit-learn
 tensorflow
 streamlit==1.28.0
 nlpaug
+nltk
