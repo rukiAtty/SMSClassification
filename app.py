@@ -2,12 +2,14 @@ import numpy as np
 import pickle
 from tensorflow.keras.preprocessing.text import one_hot
 from tensorflow.keras.preprocessing.sequence import pad_sequences
+from keras.models import load_model, save_model
 import string
 import streamlit as st
 
-model=pickle.load(open('./model1.pkl','rb'))
+
 VOCAB_SIZE = 1000
 PUNCTUATION = string.punctuation
+model=load_model('./model.h5')
 
 def remove_punctuation(series):
     no_punctuation = "".join([word for word in series if word not in PUNCTUATION])
@@ -24,7 +26,6 @@ def predict_category(text):
     pred = pred.flatten()[0]
     
     return "SPAM" if pred == 1 else "NOT A SPAM"
-
 
 def main():
     st.title("Classify your SMS")
